@@ -5,7 +5,7 @@ curl -fsSL https://pkgs.netbird.io/install.sh | sh
 if [ $? -ne 0 ]; then
     echo "Netbird repository setup failed"
     exit 1
-end
+fi
 
-apt update
-apt install netbird -y
+sudo apt update
+sudo apt install netbird -y
