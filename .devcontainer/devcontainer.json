@@ -2,5 +2,9 @@
     "postCreateCommand": "./setup-scripts/oncreate.sh",
     "postStartCommand": "./setup-scripts/poststart.sh",
     "capAdd": ["NET_ADMIN", "SYS_ADMIN", "SYS_RESOURCE"],
-    "runArgs": ["--device=/dev/net/tun", "--network=host"]
+    "runArgs": ["--device=/dev/net/tun", "--network=host"],
+    "containerEnv": {
+        "NB_STATE_DIR": "${containerWorkspaceFolder}/netbird_data",
+        "NB_DNS_STATE_FILE": "/var/lib/netbird/state.json"
+    }
 }

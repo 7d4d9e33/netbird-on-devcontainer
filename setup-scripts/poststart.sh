@@ -1,5 +1,3 @@
 #!/bin/sh
 
-echo "Starting NetBird service..."
-
-sudo /etc/init.d/netbird start
+mkdir -p $PWD/netbird_data
