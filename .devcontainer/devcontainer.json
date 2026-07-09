@@ -1,0 +1,5 @@
+{
+    "postCreateCommand": "../setup-scripts/oncreate.sh",
+    "capAdd": ["NET_ADMIN", "SYS_ADMIN", "SYS_RESOURCE"],
+    "runArgs": ["--device=/dev/net/tun", "--network host"]
+}
