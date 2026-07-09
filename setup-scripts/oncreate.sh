@@ -8,4 +8,4 @@ if [ $? -ne 0 ]; then
 end
 
 apt update
-apt install netbird
+apt install netbird -y
